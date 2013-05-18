@@ -4,7 +4,7 @@ Tags: github, ribbon, git
 Requires at least: 2.8  
 Donate Link: http://sudarmuthu.com/if-you-wanna-thank-me  
 Tested up to: 3.5.1  
-Stable tag: 0.8  
+Stable tag: 0.9  
 
 Adds "Fork me on Github" ribbons to your WordPress posts
 
@@ -80,6 +80,9 @@ Extract the zip file and just drop the contents in the wp-content/plugins/ direc
 
 == Changelog ==
 
+= v0.9 (2013-05-18) (Dev time: 0.5 hour) =
+* Fixed a bug which prevented the ribbon from showing on non pages
+
 = v0.8 (2013-05-14) (Dev time: 0.5 hour) =
 * Fixed a bug which prevented the ribbon from showing on pages
 
@@ -104,11 +107,6 @@ Extract the zip file and just drop the contents in the wp-content/plugins/ direc
 
 = v0.1 (2010-08-04) =
 *   Initial Release
-
-== Upgrade Notice ==
-
-= 0.8 =
-Fixed a bug which prevented the ribbon from showing on pages
 
 == Readme Generator ==
 
