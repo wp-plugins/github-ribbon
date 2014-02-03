@@ -1,10 +1,10 @@
 === Github Ribbon ===
 Contributors: sudar  
 Tags: github, ribbon, git  
-Requires at least: 2.8  
+Requires at least: 3.8  
 Donate Link: http://sudarmuthu.com/if-you-wanna-thank-me  
-Tested up to: 3.5.2  
-Stable tag: 1.1.0  
+Tested up to: 3.8.1  
+Stable tag: 1.1.1  
 
 Adds "Fork me on Github" ribbons to your WordPress posts
 
@@ -68,15 +68,24 @@ The pot file is available with the Plugin. If you are willing to do translation 
 
 == Installation ==
 
-Extract the zip file and just drop the contents in the wp-content/plugins/ directory of your WordPress installation and then activate the Plugin from Plugins page.
+Extract the zip file and just drop the contents in the `wp-content/plugins/` directory of your WordPress installation and then activate the Plugin from Plugins page.
 
 == Screenshots ==
 
+
 1. Plugin in action in author's blog
 
-2. Configuration screen
 
+1. Configuration screen
+
+== Readme Generator ==
+
+This Readme file was generated using <a href = 'http://sudarmuthu.com/wordpress/wp-readme'>wp-readme</a>, which generates readme files for WordPress Plugins.
 == Changelog ==
+
+= v1.1.1 (2014-02-03) (Dev time: 0.5 hour) =
+- Fix: Fix warnings and undefined notices
+- Tweak: Make it compatible with WordPress 3.8
 
 = v1.1.0 (2013-07-30) (Dev time: 0.5 hour) =
 * Added the ability to open links in a new tab
@@ -111,7 +120,3 @@ Extract the zip file and just drop the contents in the wp-content/plugins/ direc
 
 = v0.1 (2010-08-04) =
 *   Initial Release
-
-== Readme Generator ==
-
-This Readme file was generated using <a href = 'http://sudarmuthu.com/wordpress/wp-readme'>wp-readme</a>, which generates readme files for WordPress Plugins.
