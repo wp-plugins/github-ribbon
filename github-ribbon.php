@@ -5,7 +5,7 @@ Plugin Script: github-ribbon.php
 Plugin URI: http://sudarmuthu.com/wordpress/github-ribbon
 Description: Adds "Fork me on Github" ribbons to your WordPress posts
 Author: Sudar
-Version: 1.1.1
+Version: 1.1.2
 License: GPL
 Donate Link: http://sudarmuthu.com/if-you-wanna-thank-me
 Author URI: http://sudarmuthu.com/
@@ -37,7 +37,7 @@ Check readme file for full release notes
  */
 class GithubRibbon {
 
-    const VERSION = '1.1.1';
+    const VERSION = '1.1.2';
     private $ribbon_placed = FALSE; //flag to see if the ribbon is already placed
 
     /**
@@ -166,7 +166,7 @@ class GithubRibbon {
         // verify this came from the our screen and with proper authorization,
         // because save_post can be triggered at other times
 
-        if ( !wp_verify_nonce( $_POST['gr_noncename'], plugin_basename(__FILE__) )) {
+        if ( !isset( $_POST['gr_noncename'] ) || !wp_verify_nonce( $_POST['gr_noncename'], plugin_basename( __FILE__ ) ) ) {
             return $post_id;
         }
 
