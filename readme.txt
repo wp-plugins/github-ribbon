@@ -3,8 +3,8 @@ Contributors: sudar
 Tags: github, ribbon, git  
 Requires at least: 3.8  
 Donate Link: http://sudarmuthu.com/if-you-wanna-thank-me  
-Tested up to: 3.8.1  
-Stable tag: 1.1.2  
+Tested up to: 4.0  
+Stable tag: 1.1.3  
 
 Adds "Fork me on Github" ribbons to your WordPress posts
 
@@ -82,6 +82,9 @@ Extract the zip file and just drop the contents in the `wp-content/plugins/` dir
 
 This Readme file was generated using <a href = 'http://sudarmuthu.com/wordpress/wp-readme'>wp-readme</a>, which generates readme files for WordPress Plugins.
 == Changelog ==
+
+= v1.1.3 (2014-10-04) (Dev time: 0.1 hour) =
+- Fix: Resolve SSL mixed content warnings by referencing the ribbon image without a hard coded scheme
 
 = v1.1.2 (2014-02-06) (Dev time: 0.5 hour) =
 - Fix: Fix undefined notice in add/edit post page
