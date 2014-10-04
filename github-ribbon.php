@@ -5,7 +5,7 @@ Plugin Script: github-ribbon.php
 Plugin URI: http://sudarmuthu.com/wordpress/github-ribbon
 Description: Adds "Fork me on Github" ribbons to your WordPress posts
 Author: Sudar
-Version: 1.1.2
+Version: 1.1.3
 License: GPL
 Donate Link: http://sudarmuthu.com/if-you-wanna-thank-me
 Author URI: http://sudarmuthu.com/
@@ -16,7 +16,7 @@ Domain Path: languages/
 Check readme file for full release notes
 */
 
-/*  Copyright 2010  Sudar Muthu  (email : sudar@sudarmuthu.com)
+/**  Copyright 2010  Sudar Muthu  (email : sudar@sudarmuthu.com)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License, version 2, as
@@ -37,7 +37,7 @@ Check readme file for full release notes
  */
 class GithubRibbon {
 
-    const VERSION = '1.1.2';
+    const VERSION = '1.1.3';
     private $ribbon_placed = FALSE; //flag to see if the ribbon is already placed
 
     /**
@@ -111,7 +111,7 @@ class GithubRibbon {
     function inner_custom_box() {
         global $post;
         $post_id = $post->ID;
-        
+
         $gr_options = $this->get_ribbon_options();
 
         if ($post_id > 0) {
@@ -262,7 +262,7 @@ class GithubRibbon {
 
     /**
      * Add the github ribbon
-     * 
+     *
      * @global object $post Current post
      * @param string $content Post content
      * @return string modified content
@@ -400,10 +400,10 @@ class GithubRibbon {
 
     /**
      * Get Ribbon options, after replacing default values
-     * 
+     *
      * @access private
      * @since 1.1.1
-     * 
+     *
      * return (array) processed ribbon options
      *
      */
@@ -452,73 +452,73 @@ Class GithubRibbonType {
         switch($ribbon_type) {
             case self::RED_LEFT:
                 return <<<EOD
-<img style="position: fixed; top: 0; left: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png" alt="Fork me on GitHub" />
+<img style="position: fixed; top: 0; left: 0; border: 0;" src="//s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png" alt="Fork me on GitHub" />
 EOD;
                 break;
 
             case self::RED_RIGHT:
                 return <<<EOD
-<img style="position: fixed; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" />
+<img style="position: fixed; top: 0; right: 0; border: 0;" src="//s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" />
 EOD;
                 break;
 
             case self::GREEN_LEFT:
                 return <<<EOD
-<img style="position: fixed; top: 0; left: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png" alt="Fork me on GitHub" />
+<img style="position: fixed; top: 0; left: 0; border: 0;" src="//s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png" alt="Fork me on GitHub" />
 EOD;
                 break;
 
             case self::GREEN_RIGHT:
                 return <<<EOD
-<img style="position: fixed; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub" />
+<img style="position: fixed; top: 0; right: 0; border: 0;" src="//s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub" />
 EOD;
                 break;
 
             case self::BLACK_LEFT:
                 return <<<EOD
-<img style="position: fixed; top: 0; left: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png" alt="Fork me on GitHub" />
+<img style="position: fixed; top: 0; left: 0; border: 0;" src="//s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png" alt="Fork me on GitHub" />
 EOD;
                 break;
 
             case self::BLACK_RIGHT:
                 return <<<EOD
-<img style="position: fixed; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" />
+<img style="position: fixed; top: 0; right: 0; border: 0;" src="//s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" />
 EOD;
                 break;
 
             case self::ORANGE_LEFT:
                 return <<<EOD
-<img style="position: fixed; top: 0; left: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_left_orange_ff7600.png" alt="Fork me on GitHub" />
+<img style="position: fixed; top: 0; left: 0; border: 0;" src="//s3.amazonaws.com/github/ribbons/forkme_left_orange_ff7600.png" alt="Fork me on GitHub" />
 EOD;
                 break;
 
             case self::ORANGE_RIGHT:
                 return <<<EOD
-<img style="position: fixed; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub" />
+<img style="position: fixed; top: 0; right: 0; border: 0;" src="//s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub" />
 EOD;
                 break;
 
             case self::GRAY_LEFT:
                 return <<<EOD
-<img style="position: fixed; top: 0; left: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png" alt="Fork me on GitHub" />
+<img style="position: fixed; top: 0; left: 0; border: 0;" src="//s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png" alt="Fork me on GitHub" />
 EOD;
                 break;
 
             case self::GRAY_RIGHT:
                 return <<<EOD
-<img style="position: fixed; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub" />
+<img style="position: fixed; top: 0; right: 0; border: 0;" src="//s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub" />
 EOD;
                 break;
 
             case self::WHITE_LEFT:
                 return <<<EOD
-<img style="position: fixed; top: 0; left: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_left_white_ffffff.png" alt="Fork me on GitHub" />
+<img style="position: fixed; top: 0; left: 0; border: 0;" src="//s3.amazonaws.com/github/ribbons/forkme_left_white_ffffff.png" alt="Fork me on GitHub" />
 EOD;
                 break;
 
             case self::WHITE_RIGHT:
                 return <<<EOD
-<img style="position: fixed; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub" />
+<img style="position: fixed; top: 0; right: 0; border: 0;" src="//s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub" />
 EOD;
                 break;
 
@@ -538,13 +538,13 @@ EOD;
 function github_ribbon($ribbon_type, $github_url, $in_tab = FALSE, $ribbon_button_type = 'Image ribbons', $display = TRUE) {
 
     $output = '';
-    
+
     if ($in_tab) {
         $target = ' target = "_blank" ';
     } else {
         $target = '';
     }
-        
+
     if ($ribbon_button_type == 'CSS3 ribbons') {
         $ribbon_class = new ReflectionClass('GithubRibbonType');
         $ribbon_types = $ribbon_class->getConstants();
@@ -566,7 +566,7 @@ EOD;
     } else {
         $output = '<a class = "github-ribbon" href="' . $github_url . '"' . $target . '>' . GithubRibbonType::get_ribbon_image($ribbon_type) . '</a>';
     }
-    
+
     if ($display) {
         echo $output;
     } else {
