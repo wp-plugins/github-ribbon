@@ -3,8 +3,8 @@ Contributors: sudar
 Tags: github, ribbon, git  
 Requires at least: 3.8  
 Donate Link: http://sudarmuthu.com/if-you-wanna-thank-me  
-Tested up to: 4.2  
-Stable tag: 1.2  
+Tested up to: 4.2.3  
+Stable tag: 1.2.1  
 
 Adds "Fork me on Github" ribbons to your WordPress posts
 
@@ -82,6 +82,9 @@ Extract the zip file and just drop the contents in the `wp-content/plugins/` dir
 
 This Readme file was generated using <a href = 'http://sudarmuthu.com/wordpress/wp-readme'>wp-readme</a>, which generates readme files for WordPress Plugins.
 == Changelog ==
+
+= v1.2.1 (2015-07-26) (Dev time: 1 hour) =
+- Tweak: Add z-index to the ribbon. (Thanks https://github.com/vivex)
 
 = v1.2 (2015-04-27) (Dev time: 1 hour) =
 
